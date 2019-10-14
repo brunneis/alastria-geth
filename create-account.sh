@@ -2,4 +2,4 @@
 docker run -ti \
 -e "HOST_UID=$UID" \
 -v "$(pwd)":/tmp/geth/keystore \
-brunneis/alastria-geth account new
+ethereum/client-go --datadir /tmp/geth account new
